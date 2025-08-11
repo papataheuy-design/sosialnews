@@ -1,56 +1,41 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SosialNews Hari Ini</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>NEWSHUB - Berita Terkini</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <header>
-    <h1>📰 SosialNews</h1>
-    <p>Berita Terbaru & Forum Diskusi</p>
-  </header>
-
-  <main>
-    <!-- Berita Terbaru -->
-    <section id="news">
-      <h2>Berita Terbaru</h2>
-      <div id="news-list" class="grid"></div>
-    </section>
-
-    <!-- Diskusi -->
-    <section id="discussion">
-      <h2>Diskusi Artikel</h2>
-      <form id="comment-form">
-        <input type="text" id="name" placeholder="Nama Anda" required>
-        <textarea id="comment" placeholder="Tulis komentar..." required></textarea>
-        <button type="submit">💬 Kirim Komentar</button>
-      </form>
-      <div id="comments-list"></div>
-    </section>
-  </main>
-
-  <!-- Firebase SDK -->
-  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore-compat.js"></script>
-
-  <script>
-    const firebaseConfig = {
-      apiKey: "AIzaSyAN825UwYIJ6zGgOpb8fYWZBeBfOSvNNU4",
-      authDomain: "socialnewshariini.firebaseapp.com",
-      projectId: "socialnewshariini",
-      storageBucket: "socialnewshariini.firebasestorage.app",
-      messagingSenderId: "579951188459",
-      appId: "1:579951188459:web:83322616a6bfd971eea1ae",
-      measurementId: "G-7KSKKSPFH4"
-    };
-    firebase.initializeApp(firebaseConfig);
-  </script>
-
-  <script src="assets/js/app.js"></script>
-  <script src="assets/js/comments.js"></script>
+    <header>
+        <div class="logo">NEWSHUB</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Berita</a>
+            <a href="#">Diskusi</a>
+            <a href="#">Tentang</a>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>Berita Terpercaya & Terbaru</h1>
+            <p>Dapatkan informasi terkini dari sumber terpercaya, lengkap dengan diskusi interaktif.</p>
+        </section>
+        <section class="news">
+            <article>
+                <h2>Judul Berita 1</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+            </article>
+            <article>
+                <h2>Judul Berita 2</h2>
+                <p>Proin sed nisl nec nulla malesuada dapibus...</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 NEWSHUB. Semua hak dilindungi.</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
